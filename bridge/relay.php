@@ -20,7 +20,7 @@ $msgtype = $receiveHttpRawPostObj->MsgType;
 
 switch ($msgtype) {
 case 'text':
-relayText($receiveHttpRawPostObj,$relayTo);
+relayText($receiveHttpRawPostObj, $relayTo);
 break;
 
 default:
@@ -40,7 +40,7 @@ function replyReject($receiveHttpRawPostObj)
     exit();
 }
 
-function relayText($receiveHttpRawPostObj,$relayTo)
+function relayText($receiveHttpRawPostObj, $relayTo)
 {
     /*
 接收文本消息格式
